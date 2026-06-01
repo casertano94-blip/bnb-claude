@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300..1000&family=Source+Serif+4:opsz,wght@8..60,400..900&display=swap");
+
+:root {
+  --ink: #2d241d;
+  --ink-soft: #6b5b4f;
+  --paper: #fbf5ec;
+  --surface: #efe1cf;
+  --card: #fffaf3;
+  --sea: #6f7f5f;
+  --sea-dark: #4e5f45;
+  --accent: #b8674b;
+  --accent-dark: #8e4a36;
+  --mist: #e8eee3;
+  --sand: #f3d6bd;
+  --line: rgba(45, 36, 29, 0.13);
+  --line-strong: rgba(45, 36, 29, 0.22);
+  --shadow-soft: 0 22px 70px rgba(45, 36, 29, 0.12);
+  --shadow-card: 0 18px 44px rgba(45, 36, 29, 0.1);
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Nunito Sans", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.site-header {
+  background: rgba(251, 245, 236, 0.82);
+}
+
+.site-header.is-scrolled {
+  background: rgba(251, 245, 236, 0.96);
+  box-shadow: 0 14px 36px rgba(45, 36, 29, 0.08);
+}
+
+.brand-mark {
+  background: linear-gradient(135deg, var(--sea-dark), var(--accent));
+  box-shadow: 0 14px 28px rgba(111, 127, 95, 0.22);
+}
+
+.nav-links a::after,
+.btn-primary,
+.carousel-dots button.is-active,
+.room-body li::before,
+.check-list li::before {
+  background: var(--accent);
+}
+
+.btn-primary {
+  box-shadow: 0 16px 34px rgba(184, 103, 75, 0.28);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: var(--accent-dark);
+  box-shadow: 0 20px 46px rgba(142, 74, 54, 0.32);
+}
+
+.btn-secondary.dark:hover,
+.btn-secondary.dark:focus-visible {
+  border-color: var(--sea);
+  color: var(--sea-dark);
+}
+
+.hero-media {
+  background:
+    linear-gradient(rgba(45, 36, 29, 0.08), rgba(45, 36, 29, 0.08)),
+    url("https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1800&q=82") center/cover;
+}
+
+.hero-overlay {
+  background:
+    radial-gradient(circle at 18% 28%, rgba(184, 103, 75, 0.28), transparent 34%),
+    linear-gradient(90deg, rgba(45, 36, 29, 0.78) 0%, rgba(45, 36, 29, 0.52) 48%, rgba(45, 36, 29, 0.18) 100%),
+    linear-gradient(180deg, rgba(45, 36, 29, 0.14), rgba(45, 36, 29, 0.64));
+}
+
+.feature-card,
+.room-card,
+.review-card,
+.booking-form,
+.map-box,
+details {
+  background: rgba(255, 250, 243, 0.9);
+}
+
+.feature-card span {
+  background: var(--mist);
+  color: var(--sea-dark);
+}
+
+.swipe-hint {
+  background: rgba(45, 36, 29, 0.88);
+  box-shadow: 0 16px 34px rgba(45, 36, 29, 0.18);
+}
+
+.room-kicker,
+.room-footer a,
+.stars {
+  color: var(--accent-dark);
+}
+
+.service-item {
+  background: rgba(255, 250, 243, 0.94);
+}
+
+.service-item:hover,
+.service-item:focus-within {
+  background: #fffaf3;
+}
+
+.service-item span {
+  background: linear-gradient(135deg, var(--mist), #fff0df);
+  color: var(--sea-dark);
+}
+
+.review-card {
+  background: linear-gradient(135deg, rgba(255, 250, 243, 0.95), rgba(243, 214, 189, 0.5));
+}
+
+.review-card strong {
+  color: var(--sea-dark);
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  border-color: var(--sea);
+  box-shadow: 0 0 0 4px rgba(111, 127, 95, 0.16);
+}
+
+.contact {
+  background:
+    radial-gradient(circle at 14% 16%, rgba(184, 103, 75, 0.32), transparent 30%),
+    linear-gradient(90deg, rgba(45, 36, 29, 0.95), rgba(45, 36, 29, 0.83)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80") center/cover;
+}
+
+.site-footer {
+  background: #211812;
+}

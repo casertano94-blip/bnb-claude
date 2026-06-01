@@ -1,4 +1,12 @@
 (() => {
+  const themeHref = "theme.css";
+  if (!document.querySelector(`link[href="${themeHref}"]`)) {
+    const themeLink = document.createElement("link");
+    themeLink.rel = "stylesheet";
+    themeLink.href = themeHref;
+    document.head.appendChild(themeLink);
+  }
+
   const header = document.querySelector("[data-header]");
   const toggle = document.querySelector("[data-nav-toggle]");
   const navPanel = document.querySelector("[data-nav-panel]");

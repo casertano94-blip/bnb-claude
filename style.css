@@ -831,6 +831,8 @@ details p { margin: 0; padding: 0 22px 22px; color: var(--ink-soft); }
   .hero-content { padding-bottom: 150px; }
   .split { grid-template-columns: 0.95fr 1.05fr; gap: clamp(40px, 7vw, 86px); }
   .split.reverse { grid-template-columns: 1fr 0.95fr; }
+  .bnb-carousel .is-clone,
+  .room-carousel .is-clone { display: none; }
   .bnb-carousel .loop-track {
     transform: none !important;
     gap: 20px;

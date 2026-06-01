@@ -120,6 +120,15 @@
     };
 
     const measure = () => {
+      if (desktopStatic()) {
+        slides.forEach((slide) => {
+          slide.style.flexBasis = "";
+          slide.style.minWidth = "";
+        });
+        translateTo(index, false);
+        return;
+      }
+
       slideWidth = viewport.getBoundingClientRect().width;
       slides.forEach((slide) => {
         if (!root.classList.contains("gallery-carousel") || window.matchMedia("(max-width: 759px)").matches) {

@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ====== SEO BASE ====== -->
+  <title>B&B Suite Partenopea – Soggiorna nel cuore di Napoli</title>
+  <meta name="description" content="B&B Suite Partenopea: camere eleganti nel centro storico di Napoli. Prenota direttamente e risparmia. Self check-in, colazione, Wi-Fi gratuito." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.suitepartenopea.it/" />
+
+  <!-- ====== OPEN GRAPH ====== -->
+  <meta property="og:title" content="B&B Suite Partenopea – Napoli" />
+  <meta property="og:description" content="Vivi Napoli da un B&B elegante e accogliente nel cuore del centro storico." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.suitepartenopea.it/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555993539-1732b0258235?w=1200" />
+  <meta property="og:locale" content="it_IT" />
+
+  <!-- ====== FONTS ====== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- ====== CSS ====== -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ====== SCHEMA.ORG ====== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "B&B Suite Partenopea",
+    "description": "B&B elegante nel cuore del centro storico di Napoli",
+    "url": "https://www.suitepartenopea.it/",
+    "telephone": "+39 081 000 0000",
+    "email": "info@suitepartenopea.it",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via dei Tribunali, 42",
+      "addressLocality": "Napoli",
+      "postalCode": "80138",
+      "addressCountry": "IT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.8518,
+      "longitude": 14.2681
+    },
+    "priceRange": "€€",
+    "checkinTime": "15:00",
+    "checkoutTime": "11:00",
+    "image": "https://images.unsplash.com/photo-1555993539-1732b0258235?w=1200",
+    "starRating": {
+      "@type": "Rating",
+      "ratingValue": "4.9"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER STICKY
+  ============================================================ -->
+  <header class="header" id="header" role="banner">
+    <div class="header__inner container">
+
+      <!-- Logo -->
+      <a href="#home" class="header__logo" aria-label="B&B Suite Partenopea – torna alla homepage">
+        <span class="header__logo-symbol" aria-hidden="true">✦</span>
+        <span class="header__logo-text">Suite<br><strong>Partenopea</strong></span>
+      </a>
+
+      <!-- Navigation desktop -->
+      <nav class="header__nav" aria-label="Navigazione principale">
+        <ul class="header__nav-list" role="list">
+          <li><a href="#presentazione" class="nav-link">Il B&B</a></li>
+          <li><a href="#camere" class="nav-link">Camere</a></li>
+          <li><a href="#servizi" class="nav-link">Servizi</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#posizione" class="nav-link">Posizione</a></li>
+          <li><a href="#recensioni" class="nav-link">Recensioni</a></li>
+          <li><a href="#contatti" class="nav-link">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA + Hamburger -->
+      <div class="header__actions">
+        <a href="https://wa.me/39081000000?text=Ciao%2C%20vorrei%20prenotare%20una%20camera"
+           class="btn btn--gold" target="_blank" rel="noopener noreferrer">
+          Prenota ora
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Apri menu mobile" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile" aria-hidden="true">
+      <ul class="mobile-menu__list" role="list">
+        <li><a href="#presentazione" class="mobile-link">Il B&B</a></li>
+        <li><a href="#camere" class="mobile-link">Camere</a></li>
+        <li><a href="#servizi" class="mobile-link">Servizi</a></li>
+        <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+        <li><a href="#posizione" class="mobile-link">Posizione</a></li>
+        <li><a href="#recensioni" class="mobile-link">Recensioni</a></li>
+        <li><a href="#contatti" class="mobile-link">Contatti</a></li>
+        <li>
+          <a href="https://wa.me/39081000000?text=Ciao%2C%20vorrei%20prenotare%20una%20camera"
+             class="btn btn--gold btn--full" target="_blank" rel="noopener noreferrer">
+            Prenota su WhatsApp
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="home" aria-label="Benvenuto al B&B Suite Partenopea">
+    <div class="hero__bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?auto=format&fit=crop&w=1920&q=80"
+           alt="" role="presentation" class="hero__img" />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content container">
+      <p class="hero__eyebrow reveal-up" aria-label="Dove siamo">Centro Storico · Napoli, Italia</p>
+      <h1 class="hero__title reveal-up delay-1">
+        Vivi Napoli da<br>
+        <em>un B&B elegante</em><br>
+        e accogliente
+      </h1>
+      <p class="hero__subtitle reveal-up delay-2">
+        Camere curate, posizione privilegiata, ospitalità autentica.<br>
+        Il tuo rifugio nel cuore della città più appassionante d'Italia.
+      </p>
+      <div class="hero__ctas reveal-up delay-3">
+        <a href="https://wa.me/39081000000?text=Ciao%2C%20vorrei%20prenotare%20una%20camera"
+           class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Prenota su WhatsApp
+        </a>
+        <a href="#camere" class="btn btn--outline">Scopri le camere</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scorri</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PRESENTAZIONE
+  ============================================================ -->
+  <section class="presentazione" id="presentazione" aria-labelledby="pres-title">
+    <div class="container">
+
+      <div class="presentazione__intro reveal-up">
+        <p class="section-label">Il nostro B&B</p>
+        <h2 class="section-title" id="pres-title">
+          Un'oasi di eleganza<br>
+          <em>nel cuore di Napoli</em>
+        </h2>
+        <p class="section-text">
+          B&B Suite Partenopea nasce dalla passione per l'ospitalità autentica e dalla volontà di offrire 
+          ai viaggiatori un'esperienza napoletana indimenticabile. Situato nel cuore del centro storico 
+          UNESCO, a pochi passi dai siti più iconici della città, il nostro B&B coniuga il fascino 
+          dell'architettura storica con il comfort moderno.
+        </p>
+      </div>
+
+      <div class="punti-forza">
+        <article class="punto reveal-up delay-1">
+          <div class="punto__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </div>
+          <h3 class="punto__title">Posizione privilegiata</h3>
+          <p class="punto__text">
+            A 5 minuti a piedi da Piazza del Gesù, Via Spaccanapoli e il Duomo di Napoli. 
+            Metro, bus e taxi sempre raggiungibili.
+          </p>
+        </article>
+
+        <article class="punto reveal-up delay-2">
+          <div class="punto__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3 class="punto__title">Camere curate</h3>
+          <p class="punto__text">
+            Ogni camera è arredata con gusto, dotata di tutti i comfort moderni e pensata 
+            per regalarti un riposo rigenerante dopo una giornata di esplorazione.
+          </p>
+        </article>
+
+        <article class="punto reveal-up delay-3">
+          <div class="punto__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="punto__title">Self check-in 24/7</h3>
+          <p class="punto__text">
+            Arrivi quando vuoi. Il nostro sistema di self check-in ti garantisce massima 
+            flessibilità. Colazione inclusa e servizi pensati per il tuo comfort.
+          </p>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CAMERE
+  ============================================================ -->
+  <section class="camere" id="camere" aria-labelledby="camere-title">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Dove dormirai</p>
+        <h2 class="section-title" id="camere-title">Le nostre camere</h2>
+        <p class="section-subtitle">Tre proposte pensate per ogni tipo di viaggiatore</p>
+      </div>
+
+      <div class="camere__grid">
+
+        <!-- Camera 1 -->
+        <article class="camera-card reveal-up delay-1">
+          <div class="camera-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80"
+                 alt="Camera Classica: letto matrimoniale con testiera in legno chiaro e finestra sul cortile interno"
+                 class="camera-card__img" loading="lazy" />
+            <span class="camera-card__badge">Più scelta</span>
+          </div>
+          <div class="camera-card__body">
+            <h3 class="camera-card__name">Suite Classica</h3>
+            <p class="camera-card__desc">
+              Elegante e senza tempo. Arredata con mobili selezionati, 
+              offre tutto il comfort necessario per un soggiorno rilassante.
+            </p>
+            <ul class="camera-card__features" aria-label="Servizi inclusi">
+              <li>Letto matrimoniale</li>
+              <li>Bagno privato</li>
+              <li>Aria condizionata</li>
+              <li>Smart TV</li>
+            </ul>
+            <div class="camera-card__footer">
+              <p class="camera-card__price"><span>da</span> €80<small>/notte</small></p>
+              <a href="https://wa.me/39081000000?text=Vorrei%20richiedere%20disponibilit%C3%A0%20per%20la%20Suite%20Classica"
+                 class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">
+                Richiedi disponibilità
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Camera 2 -->
+        <article class="camera-card reveal-up delay-2">
+          <div class="camera-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80"
+                 alt="Suite Deluxe: camera ampia con divano, decorazioni napoletane e vista sulla via storica"
+                 class="camera-card__img" loading="lazy" />
+          </div>
+          <div class="camera-card__body">
+            <h3 class="camera-card__name">Suite Deluxe</h3>
+            <p class="camera-card__desc">
+              Più spazio, più lusso. Perfetta per le coppie che desiderano 
+              un'esperienza premium con dettagli esclusivi e vista sulla via storica.
+            </p>
+            <ul class="camera-card__features" aria-label="Servizi inclusi">
+              <li>Letto king size</li>
+              <li>Bagno con doccia walk-in</li>
+              <li>Angolo relax</li>
+              <li>Minibar incluso</li>
+            </ul>
+            <div class="camera-card__footer">
+              <p class="camera-card__price"><span>da</span> €110<small>/notte</small></p>
+              <a href="https://wa.me/39081000000?text=Vorrei%20richiedere%20disponibilit%C3%A0%20per%20la%20Suite%20Deluxe"
+                 class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">
+                Richiedi disponibilità
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Camera 3 -->
+        <article class="camera-card reveal-up delay-3">
+          <div class="camera-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?auto=format&fit=crop&w=800&q=80"
+                 alt="Suite Famiglia: camera spaziosa con letti separati, ideale per famiglie con bambini"
+                 class="camera-card__img" loading="lazy" />
+          </div>
+          <div class="camera-card__body">
+            <h3 class="camera-card__name">Suite Famiglia</h3>
+            <p class="camera-card__desc">
+              Pensata per chi viaggia con bambini o in piccoli gruppi. 
+              Spazi generosi e ogni comodità per rendere il vostro soggiorno perfetto.
+            </p>
+            <ul class="camera-card__features" aria-label="Servizi inclusi">
+              <li>Letto matrimoniale + singolo</li>
+              <li>Bagno grande</li>
+              <li>Zona living</li>
+              <li>Culla disponibile</li>
+            </ul>
+            <div class="camera-card__footer">
+              <p class="camera-card__price"><span>da</span> €130<small>/notte</small></p>
+              <a href="https://wa.me/39081000000?text=Vorrei%20richiedere%20disponibilit%C3%A0%20per%20la%20Suite%20Famiglia"
+                 class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">
+                Richiedi disponibilità
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVIZI
+  ============================================================ -->
+  <section class="servizi" id="servizi" aria-labelledby="servizi-title">
+    <div class="servizi__bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Cosa offriamo</p>
+        <h2 class="section-title" id="servizi-title">Ogni comfort,<br><em>incluso per te</em></h2>
+      </div>
+
+      <div class="servizi__grid">
+
+        <div class="servizio-item reveal-up delay-1">
+          <div class="servizio-item__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M5 12.55a11 11 0 0114.08 0M1.42 9a16 16 0 0121.16 0M8.53 16.11a6 6 0 016.95 0M12 20h.01"/>
+            </svg>
+          </div>
+          <p class="servizio-item__label">Wi-Fi gratuito</p>
+        </div>
+
+        <div class="servizio-item reveal-up delay-2">
+          <div class="servizio-item__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/>
+            </svg>
+          </div>
+          <p class="servizio-item__label">Colazione inclusa</p>
+        </div>
+
+        <div class="servizio-item reveal-up delay-1">
+          <div class="servizio-item__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.5 2.5 0 1119.5 12H2"/>
+            </svg>
+          </div>
+          <p class="servizio-item__label">Aria condizionata</p>
+        </div>
+
+        <div class="servizio-item reveal-up delay-2">
+          <div class="servizio-item__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
+              <polyline points="17 2 12 7 7 2"/>
+            </svg>
+          </div>
+          <p class="servizio-item__label">Smart TV</p>
+        </div>
+
+        <div class="servizio-item reveal-up delay-1">
+          <div class="servizio-item__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 10h3a2 2 0 012 2v8a2 2 0 01-2 2H3v-12zm9-8h3a2 2 0 012 2v18h-7V4a2 2 0 012-2zm9 6h-3v14h3V8z"/>
+            </svg>
+          </div>
+          <p class="servizio-item__label">Bagno privato</p>
+        </div>
+
+        <div class="servizio-item reveal-up delay-2">
+          <div class="servizio-item__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <p class="servizio-item__label">Self check-in 24/7</p>
+        </div>
+
+        <div class="servizio-item reveal-up delay-1">
+          <div class="servizio-item__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="1" y="3" width="15" height="13" rx="1"/>
+              <path d="M16 8h5l3 3v5h-8V8zM5.5 21a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+            </svg>
+          </div>
+          <p class="servizio-item__label">Transfer aeroporto</p>
+        </div>
+
+        <div class="servizio-item reveal-up delay-2">
+          <div class="servizio-item__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            </svg>
+          </div>
+          <p class="servizio-item__label">Parcheggio vicino</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       GALLERY
+  ============================================================ -->
+  <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Scorci e atmosfere</p>
+        <h2 class="section-title" id="gallery-title">La nostra gallery</h2>
+      </div>
+    </div>
+
+    <div class="gallery__grid">
+      <figure class="gallery__item gallery__item--tall reveal-up delay-1">
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=600&q=80"
+             alt="Camera elegante con letto matrimoniale e decorazioni calde" loading="lazy" />
+      </figure>
+      <figure class="gallery__item reveal-up delay-2">
+        <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?auto=format&fit=crop&w=600&q=80"
+             alt="Vista panoramica del golfo di Napoli dal Castel dell'Ovo" loading="lazy" />
+      </figure>
+      <figure class="gallery__item reveal-up delay-3">
+        <img src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?auto=format&fit=crop&w=600&q=80"
+             alt="Colazione napoletana con cornetti freschi, caffè e succhi di frutta" loading="lazy" />
+      </figure>
+      <figure class="gallery__item gallery__item--wide reveal-up delay-1">
+        <img src="https://images.unsplash.com/photo-1525874684015-58379d421a52?auto=format&fit=crop&w=900&q=80"
+             alt="Corridoio interno del B&B con pavimento in cotto e soffitto a volta" loading="lazy" />
+      </figure>
+      <figure class="gallery__item reveal-up delay-2">
+        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80"
+             alt="Bagno moderno con doccia walk-in e accessori di qualità" loading="lazy" />
+      </figure>
+      <figure class="gallery__item reveal-up delay-3">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+             alt="Terrazza sul tetto con vista sul centro storico di Napoli" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       LOCALITA'
+  ============================================================ -->
+  <section class="localita" id="localita" aria-labelledby="localita-title">
+    <div class="localita__parallax" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1534445538923-ab1a51cf5e67?auto=format&fit=crop&w=1920&q=80"
+           alt="" role="presentation" class="localita__parallax-img" />
+      <div class="localita__parallax-overlay"></div>
+    </div>
+
+    <div class="container localita__content">
+      <div class="localita__text slide-in-left">
+        <p class="section-label section-label--light">Dove siamo</p>
+        <h2 class="section-title section-title--light" id="localita-title">
+          Napoli ai tuoi piedi
+        </h2>
+        <p class="localita__desc">
+          Il B&B Suite Partenopea si trova in una posizione strategica nel centro storico di Napoli, 
+          dichiarato patrimonio UNESCO. In pochi minuti raggiungi i luoghi più belli e autentici 
+          della città, senza bisogno di auto o taxi.
+        </p>
+      </div>
+
+      <div class="localita__attrazioni slide-in-right">
+        <h3 class="localita__attrazioni-title">Cosa trovi nelle vicinanze</h3>
+        <ul class="attrazioni-list" aria-label="Attrazioni nelle vicinanze">
+          <li class="attrazione-item">
+            <span class="attrazione-item__dist" aria-label="200 metri">200m</span>
+            <span class="attrazione-item__name">Spaccanapoli</span>
+          </li>
+          <li class="attrazione-item">
+            <span class="attrazione-item__dist" aria-label="350 metri">350m</span>
+            <span class="attrazione-item__name">Piazza del Gesù Nuovo</span>
+          </li>
+          <li class="attrazione-item">
+            <span class="attrazione-item__dist" aria-label="600 metri">600m</span>
+            <span class="attrazione-item__name">Duomo di Napoli</span>
+          </li>
+          <li class="attrazione-item">
+            <span class="attrazione-item__dist" aria-label="800 metri">800m</span>
+            <span class="attrazione-item__name">Museo Nazionale</span>
+          </li>
+          <li class="attrazione-item">
+            <span class="attrazione-item__dist" aria-label="1 chilometro">1 km</span>
+            <span class="attrazione-item__name">Stazione Centrale</span>
+          </li>
+          <li class="attrazione-item">
+            <span class="attrazione-item__dist" aria-label="5 chilometri">5 km</span>
+            <span class="attrazione-item__name">Porto e Castel dell'Ovo</span>
+          </li>
+          <li class="attrazione-item">
+            <span class="attrazione-item__dist" aria-label="6 chilometri">6 km</span>
+            <span class="attrazione-item__name">Aeroporto Capodichino</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       RECENSIONI
+  ============================================================ -->
+  <section class="recensioni" id="recensioni" aria-labelledby="recensioni-title">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Cosa dicono di noi</p>
+        <h2 class="section-title" id="recensioni-title">
+          Ospiti soddisfatti,<br><em>ogni giorno</em>
+        </h2>
+        <div class="rating-global" aria-label="Valutazione media 4.9 su 5">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p>4.9 / 5 · Oltre 150 recensioni verificate</p>
+        </div>
+      </div>
+
+      <div class="recensioni__grid">
+
+        <article class="recensione-card reveal-up delay-1">
+          <div class="stars" aria-label="5 stelle su 5" aria-hidden="true">★★★★★</div>
+          <blockquote>
+            <p class="recensione-card__testo">
+              "Soggiorno straordinario! Il B&B è incantevole, pulitissimo e in posizione perfetta. 
+              La signora che gestisce la struttura è di una gentilezza rara. Torneremo sicuramente."
+            </p>
+          </blockquote>
+          <footer class="recensione-card__footer">
+            <div class="recensione-card__avatar" aria-hidden="true">GM</div>
+            <div>
+              <p class="recensione-card__nome">Giulia M.</p>
+              <p class="recensione-card__data">Milano · Aprile 2025</p>
+            </div>
+          </footer>
+        </article>
+
+        <article class="recensione-card reveal-up delay-2">
+          <div class="stars" aria-label="5 stelle su 5" aria-hidden="true">★★★★★</div>
+          <blockquote>
+            <p class="recensione-card__testo">
+              "Location perfetta, pochi minuti a piedi da tutto. Le camere sono belle e confortevoli, 
+              il self check-in funziona benissimo. Colazione abbondante e deliziosa. Consigliatissimo!"
+            </p>
+          </blockquote>
+          <footer class="recensione-card__footer">
+            <div class="recensione-card__avatar" aria-hidden="true">LB</div>
+            <div>
+              <p class="recensione-card__nome">Luca B.</p>
+              <p class="recensione-card__data">Roma · Febbraio 2025</p>
+            </div>
+          </footer>
+        </article>
+
+        <article class="recensione-card reveal-up delay-3">
+          <div class="stars" aria-label="5 stelle su 5" aria-hidden="true">★★★★★</div>
+          <blockquote>
+            <p class="recensione-card__testo">
+              "Un posto speciale. Si sente l'amore per i dettagli in ogni angolo. 
+              La camera era impeccabile, l'atmosfera autentica e napoletana. 
+              Napoli vista così è tutta un'altra cosa."
+            </p>
+          </blockquote>
+          <footer class="recensione-card__footer">
+            <div class="recensione-card__avatar" aria-hidden="true">SF</div>
+            <div>
+              <p class="recensione-card__nome">Sophie F.</p>
+              <p class="recensione-card__data">Parigi · Marzo 2025</p>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       POSIZIONE
+  ============================================================ -->
+  <section class="posizione" id="posizione" aria-labelledby="pos-title">
+    <div class="container">
+      <div class="posizione__inner">
+
+        <div class="posizione__info reveal-up">
+          <p class="section-label">Dove trovarci</p>
+          <h2 class="section-title" id="pos-title">Vieni a trovarci</h2>
+          <address class="posizione__address">
+            <p>📍 Via dei Tribunali, 42<br>80138 Napoli NA, Italia</p>
+            <p>📞 <a href="tel:+39081000000">+39 081 000 0000</a></p>
+            <p>✉️ <a href="mailto:info@suitepartenopea.it">info@suitepartenopea.it</a></p>
+          </address>
+          <a href="https://maps.google.com/?q=Via+dei+Tribunali+42+Napoli"
+             class="btn btn--dark" target="_blank" rel="noopener noreferrer">
+            Apri su Google Maps
+          </a>
+        </div>
+
+        <div class="posizione__map reveal-up delay-2">
+          <!-- Sostituisci con il tuo embed di Google Maps reale -->
+          <iframe
+            title="Mappa posizione B&B Suite Partenopea"
+            src="https://maps.google.com/maps?q=Via+dei+Tribunali+42+Napoli&output=embed&hl=it&z=16"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Mappa Google con posizione del B&B Suite Partenopea">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FAQ
+  ============================================================ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Hai domande?</p>
+        <h2 class="section-title" id="faq-title">Domande frequenti</h2>
+      </div>
+
+      <div class="faq__list reveal-up delay-1">
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Quali sono gli orari di check-in e check-out?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq__answer">
+            <p>Il check-in è disponibile dalle <strong>15:00</strong> alle <strong>22:00</strong>. 
+            Grazie al nostro sistema di self check-in, puoi arrivare anche oltre quell'orario – 
+            ti basta contattarci in anticipo. Il check-out è previsto entro le <strong>11:00</strong>. 
+            Deposito bagagli disponibile su richiesta.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Sono ammessi gli animali domestici?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq__answer">
+            <p>Siamo una struttura <strong>pet-friendly</strong>! Accettiamo cani e gatti di piccola taglia 
+            (max 8 kg) con un supplemento di €10 a notte. È necessario comunicarcelo al momento della prenotazione.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            C'è il parcheggio?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq__answer">
+            <p>Non disponiamo di parcheggio privato, ma siamo convenzionati con un parcheggio custodito 
+            a <strong>150 metri</strong> dalla struttura. Il costo è di €15 al giorno. 
+            Possiamo prenotarlo per voi gratuitamente.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Qual è la politica di cancellazione?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq__answer">
+            <p>Offriamo cancellazione <strong>gratuita fino a 48 ore</strong> prima dell'arrivo. 
+            In caso di cancellazione tardiva o no-show, verrà addebitata la prima notte di soggiorno. 
+            Contattaci in caso di necessità: cerchiamo sempre di venire incontro ai nostri ospiti.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Come si paga?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq__answer">
+            <p>Accettiamo <strong>carte di credito e debito</strong> (Visa, MasterCard, American Express), 
+            pagamenti tramite <strong>bonifico bancario</strong> e <strong>contanti</strong>. 
+            Per le prenotazioni dirette via WhatsApp non è richiesto alcun pagamento anticipato.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Posso lasciare i bagagli dopo il check-out?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq__answer">
+            <p>Sì, offriamo il servizio di <strong>deposito bagagli gratuito</strong> per tutta la giornata 
+            del tuo check-out. Così puoi esplorare Napoli senza pensieri fino alla tua partenza.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTATTI / PRENOTAZIONE
+  ============================================================ -->
+  <section class="contatti" id="contatti" aria-labelledby="contatti-title">
+    <div class="container">
+      <div class="contatti__inner">
+
+        <div class="contatti__info reveal-up">
+          <p class="section-label section-label--light">Prenota direttamente</p>
+          <h2 class="section-title section-title--light" id="contatti-title">
+            Inizia la tua<br><em>avventura napoletana</em>
+          </h2>
+          <p class="contatti__desc">
+            Prenota direttamente con noi e ottieni il miglior prezzo garantito, 
+            senza commissioni da intermediari. Siamo sempre disponibili per 
+            qualsiasi domanda o esigenza.
+          </p>
+          <div class="contatti__direct">
+            <a href="https://wa.me/39081000000?text=Ciao%2C%20vorrei%20prenotare"
+               class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Scrivici su WhatsApp
+            </a>
+            <div class="contatti__meta">
+              <p>📞 <a href="tel:+39081000000">+39 081 000 0000</a></p>
+              <p>✉️ <a href="mailto:info@suitepartenopea.it">info@suitepartenopea.it</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contatti__form-wrap reveal-up delay-2">
+          <form class="booking-form" id="booking-form" novalidate aria-label="Modulo di prenotazione">
+            <h3 class="booking-form__title">Richiedi disponibilità</h3>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="nome" class="form-label">Nome e cognome <span aria-hidden="true">*</span></label>
+                <input type="text" id="nome" name="nome" class="form-input"
+                       placeholder="Mario Rossi" required autocomplete="name"
+                       aria-required="true" />
+              </div>
+            </div>
+
+            <div class="form-row form-row--2">
+              <div class="form-field">
+                <label for="email" class="form-label">Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-input"
+                       placeholder="mario@esempio.it" required autocomplete="email"
+                       aria-required="true" />
+              </div>
+              <div class="form-field">
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" class="form-input"
+                       placeholder="+39 333 000 0000" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-row form-row--2">
+              <div class="form-field">
+                <label for="checkin" class="form-label">Arrivo <span aria-hidden="true">*</span></label>
+                <input type="date" id="checkin" name="checkin" class="form-input"
+                       required aria-required="true" />
+              </div>
+              <div class="form-field">
+                <label for="checkout" class="form-label">Partenza <span aria-hidden="true">*</span></label>
+                <input type="date" id="checkout" name="checkout" class="form-input"
+                       required aria-required="true" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="ospiti" class="form-label">Numero ospiti <span aria-hidden="true">*</span></label>
+                <select id="ospiti" name="ospiti" class="form-input form-select"
+                        required aria-required="true">
+                  <option value="" disabled selected>Seleziona</option>
+                  <option value="1">1 ospite</option>
+                  <option value="2">2 ospiti</option>
+                  <option value="3">3 ospiti</option>
+                  <option value="4">4 ospiti</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="messaggio" class="form-label">Messaggio</label>
+                <textarea id="messaggio" name="messaggio" class="form-input form-textarea"
+                          placeholder="Richieste speciali, tipo di camera preferita…"
+                          rows="4"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--gold btn--full btn--lg">
+              Invia richiesta
+            </button>
+            <p class="form-note">* Campi obbligatori. Risponderemo entro 24 ore.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top container">
+
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo" aria-label="B&B Suite Partenopea">
+          <span class="header__logo-symbol" aria-hidden="true">✦</span>
+          <span>Suite <strong>Partenopea</strong></span>
+        </a>
+        <p class="footer__tagline">
+          Il tuo angolo di Napoli,<br>
+          autentico ed elegante.
+        </p>
+        <div class="footer__social" aria-label="Seguici sui social">
+          <a href="#" class="social-icon" aria-label="Instagram di B&B Suite Partenopea" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Facebook di B&B Suite Partenopea" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/39081000000" class="social-icon" aria-label="WhatsApp di B&B Suite Partenopea" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__nav" aria-label="Link rapidi">
+        <h4 class="footer__nav-title">Link rapidi</h4>
+        <ul class="footer__nav-list" role="list">
+          <li><a href="#presentazione">Il B&B</a></li>
+          <li><a href="#camere">Camere</a></li>
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#posizione">Dove siamo</a></li>
+          <li><a href="#recensioni">Recensioni</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contact">
+        <h4 class="footer__nav-title">Contatti</h4>
+        <address>
+          <p>Via dei Tribunali, 42<br>80138 Napoli NA</p>
+          <p><a href="tel:+39081000000">+39 081 000 0000</a></p>
+          <p><a href="mailto:info@suitepartenopea.it">info@suitepartenopea.it</a></p>
+        </address>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom container">
+      <p class="footer__copy">
+        © 2025 B&B Suite Partenopea · P.IVA 00000000000
+      </p>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Note legali</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/39081000000?text=Ciao%2C%20vorrei%20prenotare"
+     class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+     aria-label="Contattaci su WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
